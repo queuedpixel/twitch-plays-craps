@@ -42,11 +42,21 @@ Players below the starting balance gain 1.00 on every roll.
 
 The following bets are currently available:
 
-* `pass` - Pass
-* `pass-odds` - Pass Odds
-* `dpass` - Don't Pass
-* `dpass-odds` - Don't Pass Odds
-* `field` - Field; 2 pays 2 to 1, 12 pays 3 to 1
+* `pass` - *Pass*
+* `pass-odds` - Odds for *Pass* Bet
+* `dpass` - *Don't Pass*
+* `dpass-odds` - Odds for *Don't Pass* Bet
+* `field` - *Field*; 2 pays 2 to 1, 12 pays 3 to 1
+* `come` - *Come*
+* `come-point [point]` - *Come* Bet for Specified Point; used to increase *Come* bet on the specified point
+* `come-odds [point]` - Odds for *Come* Bet on Specified Point
+* `dcome` - *Don't Come*
+* `dcome-point [point]` - *Don't Come* Bet for Specified Point; used to increase *Don't Come* bet on the specified point
+* `dcome-odds [point]` - Odds for *Don't Come* Bet on Specified Point
+* `place [point]` - *Place* Bet on Specified Point
+* `dplace [point]` - *Place to Lose* Bet on Specified Point
+* `buy [point]` - *Buy* Bet on Specified Point
+* `lay [point]` - *Lay* Bet on Specified Point
 
 If you wish to make a bet for the largest possible amount, use `max` instead of an amount when placing a bet.
 
