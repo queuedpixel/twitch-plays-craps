@@ -9,8 +9,8 @@ If you're unfamiliar with craps, start with the [Craps Basics from Wizard of Odd
 
 ### Under Development
 
-This game is under development and not every possible craps bet is available right now.
-Keep checking back to discover new bets and features as they get added!
+This game is under development and not every bet is available right now.
+Keep checking back to discover new features as they get added!
 
 ### Play Overview
 
@@ -42,34 +42,41 @@ Players below the starting balance gain 1.00 on every roll.
 
 The following bets are currently available:
 
-* `pass` - *Pass*
+* `pass` - *Pass* Bet
 * `pass-odds` - Odds for *Pass* Bet
-* `dpass` - *Don't Pass*
+* `dpass` - *Don't Pass* Bet
 * `dpass-odds` - Odds for *Don't Pass* Bet
-* `field` - *Field*; 2 pays 2 to 1, 12 pays 3 to 1
-* `come` - *Come*
+* `field` - *Field* Bet; 2 pays 2 to 1, 12 pays 3 to 1
+* `come` - *Come* Bet
 * `come-point [point]` - *Come* Bet for Specified Point; used to increase *Come* bet on the specified point
 * `come-odds [point]` - Odds for *Come* Bet on Specified Point
-* `dcome` - *Don't Come*
-* `dcome-point [point]` - *Don't Come* Bet for Specified Point; used to increase *Don't Come* bet on the specified point
+* `dcome` - *Don't Come* Bet
+* `dcome-point [point]` - *Don't Come* Bet for Specified Point; used to decrease *Don't Come* bet on the specified point
 * `dcome-odds [point]` - Odds for *Don't Come* Bet on Specified Point
 * `place [point]` - *Place* Bet on Specified Point
 * `dplace [point]` - *Place to Lose* Bet on Specified Point
 * `buy [point]` - *Buy* Bet on Specified Point
 * `lay [point]` - *Lay* Bet on Specified Point
+* `any-craps` - *Any Craps* Bet; pays 7.5 to 1
+* `any-seven` - *Any Seven* Bet; pays 4 to 1
+* `hard [point]` - *Hard Way* Bet on Specified Point; 4 and 10 pay 7 to 1, 6 and 8 pay 9 to 1
 
-If you wish to make a bet for the largest possible amount, use `max` instead of an amount when placing a bet.
+You can make a bet for the largest possible amount by using `max` instead of an amount when placing a bet.
 
 You can increase or decrease a bet by issuing the `!bet` command again with a different amount.
 You can remove a bet by using `0` as the amount.
-Note that not every bet allows you to increase, decrease, or remove it at any time.
+However, not every bet allows you to increase, decrease, or remove it at all times.
 
 You may only use whole numbers for bet amounts.
 However, your balance tracks fractional amounts since some bets pay out in fractional amounts.
 
 The maximum odds is 100x.
 
-Players may only place a bet if the banker has enough money to pay out the largest possible win for that bet, along with all other bets.
+You may only place a bet if the banker has enough money to pay out the largest possible win for that bet, along with all other bets from all players.
 To prevent one player from monopolizing all of the banker's money, bets are limited to a maximum payout which is less than or equal to 1% of the banker's balance.
-You are permitted to make a bet of 1, even if the largest possible win for that bet exceeds the maximum payout,
+You are permitted to make a bet of `1`, even if the largest possible win for that bet exceeds the maximum payout,
 provided that the banker has a sufficient balance to pay out the largest possible win for that bet.
+
+In a casino some of your bets are automatically turned off on a come-out roll, such as odds for *Come* bets.
+This game does not do this for you.
+If you want to turn bets off for the come-out, or at any other time, you must remove them manually.
