@@ -60,6 +60,7 @@ The following bets are currently available:
 * `any-craps` - *Any Craps* Bet; pays 7.5 to 1
 * `any-seven` - *Any Seven* Bet; pays 4 to 1
 * `hard [point]` - *Hard Way* Bet on Specified Point; 4 and 10 pay 7 to 1, 6 and 8 pay 9 to 1
+* `hop [die1] [die2]` - *Hop* Bet on the Specified Die Roll; **hard** rolls pay 33 to 1, **easy** rolls pay 16 to 1
 
 You can make a bet for the largest possible amount by using `max` instead of an amount when placing a bet.
 
