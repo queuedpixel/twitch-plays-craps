@@ -61,6 +61,9 @@ The following bets are currently available:
 * `any-seven` - *Any Seven* Bet; pays 4 to 1
 * `hard [point]` - *Hard Way* Bet on Specified Point; 4 and 10 pay 7 to 1, 6 and 8 pay 9 to 1
 * `hop [die1] [die2]` - *Hop* Bet on the Specified Die Roll; **hard** rolls pay 33 to 1, **easy** rolls pay 16 to 1
+* `all` - *All* Bet; pays 175 to 1 for rolling 2, 3, 4, 5, 6, 8, 9, 10, 11, 12 (in any order) before rolling 7
+* `tall` - *Tall* Bet; pays 34 to 1 for rolling 8, 9, 10, 11, 12 (in any order) before rolling 7
+* `small` - *Small* Bet; pays 34 to 1 for rolling 2, 3, 4, 5, 6 (in any order) before rolling 7
 
 You can make a bet for the largest possible amount by using `max` instead of an amount when placing a bet.
 
