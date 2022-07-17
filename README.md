@@ -67,7 +67,7 @@ The following bets are currently available:
 * `small` - *Small* Bet; pays 34 to 1 for rolling 2, 3, 4, 5, 6 (in any order) before rolling 7
 * `fire` - *Fire* Bet; pays based on the number of unique points made before seven out; 4 points pays 24 to 1, 5 points pays 249 to 1, 6 points pays 999 to 1
 
-You can make a bet for the largest possible amount by using `max` instead of an amount when placing a bet.
+You can make a bet for the largest possible amount by using `max` instead of an amount when making a bet.
 
 You can increase or decrease a bet by issuing the `!bet` command again with a different amount.
 You can remove a bet by using `0` as the amount.
@@ -76,7 +76,7 @@ However, not every bet allows you to increase, decrease, or remove it at all tim
 You may only use whole numbers for bet amounts.
 However, your balance tracks fractional amounts since some bets pay out in fractional amounts.
 
-The maximum odds is 100x.
+The maximum odds are 100x.
 
 You may only place a bet if the banker has enough money to pay out the largest possible win for that bet, along with all other bets from all players.
 To prevent one player from monopolizing all of the banker's money, bets are limited to a maximum payout which is less than or equal to 1% of the banker's balance.
