@@ -34,6 +34,7 @@ Players below the starting balance gain 1.00 on every roll.
 ### Command Guide
 
 * `!help` - Show a link to this guide.
+* `!balance` - View your balance.
 * `!banker` - Serve as the banker.
 * `!banker-stop` - Stop serving as the banker.
 * `!bet [type] [amount]` - Place a bet of the specified type for the specified amount.
